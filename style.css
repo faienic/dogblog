@@ -1,0 +1,87 @@
+h1 {
+    background-color: blue;
+    color: black;
+    font-family: "Verdana, sans-serif";
+    font-size: 400%;
+    margin: 20px 25px 50px 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+p {
+    width: 25%;
+    text-align: justify;
+}
+
+#columnas{
+    column-count:3;
+   column-gap:20px;
+   column-rule:4px Groove gray;
+}
+
+li{
+    -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+}
+
+#header {
+    column-count:3;
+	margin:1px;
+	width:100%;
+	font-size: 200%;
+	font-weight: bold;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align: center;
+	}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:100%; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			}
+ 
+			.nav >  {
+				float:right;
+			}
+			
+			.nav  a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px ;
+				display:block;
+			}
+			
+			.nav  a:hover {
+				background-color:#434343;
+			}
+			
+			.nav  ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav :hover > ul {
+				display:block;
+			}
+			
+			.nav  ul  {
+				position:relative;
+			}
+			
+			.nav ul ul {
+				right:-140px;
+				/*left: 140px;*/
+				top:0px;
+			}
